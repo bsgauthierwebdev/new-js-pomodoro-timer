@@ -16,11 +16,35 @@ body {
 #timer {
     font-size: 64px;
     margin-bottom: 20px;
+    padding: 32px;
+    border-radius: 20px;
+    /* border-style: solid; */
+    box-shadow: 5px 5px 15px #888;
 }
 
 button {
-    margin: 5px;
+    margin: 10px;
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #888;
+}
+
+button:disabled {
+    opacity: 0.5;
+    text-decoration: line-through solid black;
+}
+
+#start {
+    background-color: green;
+}
+
+#stop {
+    background-color: red;
+}
+
+#reset {
+    background-color: grey;
 }
