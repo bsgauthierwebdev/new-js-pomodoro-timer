@@ -19,5 +19,6 @@ I. Create the basic HTML structure
     - 3. Add buttons for Start and Reset  
   - E. Add the script and link up the script.js file  
   - F. Create the style.css file  
+
 II. Add basic styling to the application in the style.css file  
 III. Add functionality with the script.js file  
