@@ -7,6 +7,7 @@ const resetButton = document.getElementById('reset').disabled = true
 let timeLeft = 1500 // 25 minutes in seconds
 let isTimerRunning = false
 let timerInterval
+let audio = new Audio('mixkit-alert-bells-echo-765.wav')
 
 function updateTimer() {
     const minutes = Math.floor(timeLeft / 60)
@@ -24,6 +25,7 @@ function startTimer() {
         if (timeLeft < 0) {
             clearInterval(timerInterval)
             timeLeft = 0
+            audio.play()
             isTimerRunning = false
         }
         updateTimer()
